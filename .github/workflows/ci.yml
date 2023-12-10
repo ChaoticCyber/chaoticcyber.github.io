@@ -1,0 +1,28 @@
+# Using the workflow from: "https://github.com/chaoticcyber/"
+name: Publish MkDocs Site
+on:
+  push:
+    branches:
+      - master
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    name: Deploy MkDocs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: chaoticcyber/mkdocs-deploy-gh-pages@master
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          REQUIREMENTS: requirements.txt
+          CUSTOM_DOMAIN: chaoticcyber.com
+          CUSTOM_DOCS: docs # Default value: docs
+          # EXTRA_PACKAGES: build-base
+          # GITHUB_DOMAIN: github.myenterprise.com
