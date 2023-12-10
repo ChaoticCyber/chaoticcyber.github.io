@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy docs
-        uses: chaoticcyber/mkdocs-gh-pages@main
+        uses: chaoticcyber/mkdocs-gh-pages@master
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
