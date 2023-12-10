@@ -140,9 +140,19 @@
   },
   "active": "e5b07f169feb70c2",
   "lastOpenFiles": [
-    "docs/CNAME",
+    "site/search/search_index.json",
+    "site/search",
+    "site/index.html",
+    "site/sitemap.xml.gz",
+    "site/sitemap.xml",
+    "site/404.html",
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.45e1311d.min.css.map",
+    "site/assets/stylesheets/main.45e1311d.min.css",
+    "site/assets/stylesheets",
+    "site/assets/images/favicon.png",
     "docs/index.md",
-    "docs",
     "index.md"
   ]
 }
