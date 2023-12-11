@@ -3,6 +3,7 @@ name: Publish MkDocs Site
 on:
   push:
     branches:
+      - master
       - main
 permissions:
   contents: write
@@ -12,15 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
 
       - name: Deploy docs
-        uses: chaoticcyber/mkdocs-gh-pages@master
-
+        uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-windmill-dark
+      - run: mkdocs gh-deploy --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
-          REQUIREMENTS: requirements.txt
           CUSTOM_DOMAIN: chaoticcyber.com
           CUSTOM_DOCS: docs # Default value: docs
           # EXTRA_PACKAGES: build-base
