@@ -1,4 +1,3 @@
-# Using the workflow from: "https://github.com/chaoticcyber/"
 name: Publish MkDocs Site
 on:
   push:
@@ -9,16 +8,12 @@ permissions:
   contents: write
 jobs:
   deploy:
-    name: Deploy MkDocs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-
-      - name: Deploy docs
       - uses: actions/cache@v2
         with:
           key: ${{ github.ref }}
