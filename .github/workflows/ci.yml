@@ -25,11 +25,3 @@ jobs:
           path: .cache
       - run: pip install mkdocs-windmill-dark
       - run: mkdocs gh-deploy --force
-      - uses:
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            CONFIG_FILE: mkdocs.yml
-            CUSTOM_DOMAIN: chaoticcyber.com
-            CUSTOM_DOCS: docs # Default value: docs
-            # EXTRA_PACKAGES: build-base
-            # GITHUB_DOMAIN: github.myenterprise.com
