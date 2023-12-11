@@ -6,11 +6,11 @@ docs_dir: ./docs # Obsidian Vault
 
 repo_name: ChaoticCyber
 repo_url: https://chaoticcyber.com
-#edit_uri: tree/main/docs
+edit_uri: tree/main/docs
 
 
 # Custom Homepage Elements
-home_cover_image: ./attachments/gnome.png
+home_cover_image: attachments/gnome.png
 home_tagline: Welcome to ChaoticCyber
 home_description: |
   Chaotic things for a chaotic world
@@ -33,7 +33,7 @@ home_execute_js: | # Javascript to execute when accessing the homepage
 # Material Configuration
 theme:
   name: windmill-dark
-  custom_dir: ./assets # Contains custom 'home.html' coverpage (and 'main.html')
+  custom_dir: assets/ # Contains custom 'home.html' coverpage (and 'main.html')
   
   features:
     # Page Interaction

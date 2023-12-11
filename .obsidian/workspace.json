@@ -144,22 +144,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfb55b533bdc86b6",
+  "active": "e5b07f169feb70c2",
   "lastOpenFiles": [
+    "assets/index.html",
+    "assets/404.html",
+    "assets/sitemap.xml",
+    "assets/search/search_index.json",
+    "assets/search",
+    "assets/images/favicon.png",
+    "assets/images",
+    "assets/stylesheets/palette.06af60db.min.css.map",
+    "assets/stylesheets/palette.06af60db.min.css",
+    "assets/stylesheets/main.45e1311d.min.css.map",
+    "assets/stylesheets/main.45e1311d.min.css",
+    "assets/stylesheets",
+    "site/assets/images/favicon.png",
     "chaotic/asdf.md",
     "attachments/gnome.png",
     "docs/index.md",
-    "assets/main.html",
-    "assets/home.html",
-    "assets",
-    "attachments",
-    "requirements.txt",
-    "New Text Document.txt",
-    "New folder",
-    "site/search/search_index.json",
-    "site/search",
-    "site/index.html",
-    "site/assets/images/favicon.png",
     "index.md"
   ]
 }
