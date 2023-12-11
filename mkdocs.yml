@@ -1,107 +1,10 @@
 # Site Settings
 site_name: ChaoticCyber
-site_author: PoopMcgee
+site_author: Aids
 site_url: https://chaoticcyber.com
-copyright: © 2024 | @ChaoticCyber
 docs_dir: ./docs # Obsidian Vault
-
-# Custom Homepage Elements
-home_cover_image: attachments/gnome.png
-home_tagline: Welcome to ChaoticCyber
-home_description: |
-  Chaotic things for a chaotic world
-  
-# Gradient Color
-home_gradient_hsla: hsla(160deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
-
-# Homepage Code Execution
-home_execute_js: | # Javascript to execute when accessing the homepage
-  console.log("This is an example!");
 
 # Material Configuration
 theme:
   name: windmill-dark
   custom_dir: assets/ # Contains custom 'home.html' coverpage (and 'main.html')
-  
-  features:
-    # Page Interaction
-    - content.action.edit # View source code on Github
-    - content.code.copy   # Codeblocks can be copied to clipboard
-    
-    # Optimized Navigation
-    - navigation.indexes          # Implied section 'index.md' files
-    - navigation.tabs             # Static upper section tabs (exist)
-    - navigation.tabs.sticky      # Static upper section tabs (stay)
-    - navigation.top              # 'Back to top' Button when scrolling up
-    - navigation.tracking         # Update URL while scrolling
-    - navigation.footer           # Add 'previous' and 'next' buttons in the footer
-    - navigation.instant          # Keep navigation from reloading
-    - navigation.instant.progress # Display page loading progress-bar ( > 400ms)
-    - toc.follow                  # Update navigation while scrolling
-    
-    # Undecided:
-    - toc.integrate       # Current document contents built into Navigation
-    - navigation.sections # Grouping of directories into sections
-    #- navigation.expand  # Auto-expand all directories/sections
-    #- navigation.expand.section # Not real, but it should be
-    
-    # Search Functionality
-    - search.highlight # Highlight all occurrences of queried string
-    - search.share     # Search Query can be copied to Clipboard
-    - search.suggest   # Display likeliest completion for the last queried word
-    
-    
-  palette:
-    # Light Mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: pink # teal
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to Dark Mode
-
-    # Dark Mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: pink # teal
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to Light Mode
-
-markdown_extensions:
-  - attr_list # File Download Support
-  - def_list
-  - footnotes
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.magiclink
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  
-  # Obsidian Callout Support
-  - nl2br
-  - admonition
-  - pymdownx.details
-  
-  # Mermaid Diagram Support
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - toc:
-      permalink: true
-
-plugins:
-  - search
-  - roamlinks # Obsidian Style Image Support ![[<attachment_name>]]
-  - callouts
-  - mermaid2:
-      javascript: js/mermaid.min.js 
