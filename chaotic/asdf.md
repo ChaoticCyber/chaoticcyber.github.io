@@ -1,1 +1,1 @@
-asdf
+![[gnome.png]]
