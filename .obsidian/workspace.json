@@ -11,10 +11,8 @@
             "id": "dfb55b533bdc86b6",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "attachments/gnome.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "attachments/gnome.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "attachments/gnome.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "attachments/gnome.png"
-              }
+              "state": {}
             }
           }
         ]
@@ -144,24 +138,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5b07f169feb70c2",
+  "active": "dfb55b533bdc86b6",
   "lastOpenFiles": [
-    "assets/index.html",
-    "assets/404.html",
-    "assets/sitemap.xml",
-    "assets/search/search_index.json",
-    "assets/search",
-    "assets/images/favicon.png",
-    "assets/images",
+    "requirements.txt",
+    "mkdocs.yml",
+    "docs/index.md",
+    "docs",
+    "chaotic/asdf.md",
+    "chaotic/amazon.com",
+    "chaotic",
+    "attachments/gnome.png",
+    "attachments",
     "assets/stylesheets/palette.06af60db.min.css.map",
     "assets/stylesheets/palette.06af60db.min.css",
     "assets/stylesheets/main.45e1311d.min.css.map",
     "assets/stylesheets/main.45e1311d.min.css",
     "assets/stylesheets",
-    "site/assets/images/favicon.png",
-    "chaotic/asdf.md",
-    "attachments/gnome.png",
-    "docs/index.md",
+    "assets/images/favicon.png",
+    "README.md",
+    "wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite.png",
+    "wp-content/themes/firwl/components/owl-carousel/dist/assets/owl.video.play.png",
+    "wp-content/plugins/addons-for-visual-composer/assets/css/fonts/icomoon/icomoon17c4.svg",
+    "wp-content/plugins/ttg-reaktions/assets/reakticons/fonts/reakticons.svg",
+    "wp-content/plugins/ttg-reaktions/assets/qt-socicon/fonts/qt-socicon.svg",
+    "wp-content/plugins/ttg-reaktions/assets/css/img/stars.png",
+    "wp-content/plugins/jetpack/modules/shortcodes/img/slideshow-controls.png",
+    "wp-content/plugins/icons2go/iconpacks/t2gicons-travel/fonts/t2gicons-travel.svg",
+    "vault/index.md",
     "index.md"
   ]
 }
